@@ -172,4 +172,7 @@ function draw() {
     requestAnimationFrame(draw);
 }
 
-draw();
+document.getElementById("myCanvas").onclick = function() {
+  
+  draw();
+};
