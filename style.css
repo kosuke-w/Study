@@ -9,10 +9,12 @@ canvas {
   margin: 0 auto;
   width: 480;
   height: 320;
+  margin-top:15px;
 }
 
 .intro {
   text-align: center;
   font-size: 24px;
   color: #0095DD;
+  margin-top: 10px;
 }
