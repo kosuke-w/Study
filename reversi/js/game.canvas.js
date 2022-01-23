@@ -4,7 +4,7 @@
 if (window.game === undefined) {window.game = {}}
 if (window.game.canvas === undefined) {window.game.canvas = {}}
 
-(function() {
+$(function() {
 	var _t = game.canvas;	// ショートカットの作成
 
 	// 変数の初期化
@@ -90,5 +90,4 @@ if (window.game.canvas === undefined) {window.game.canvas = {}}
 		cntx.arcTo(x,  y,  x2, y,  r);	// 左上
 		cntx.closePath();
 	};
-
 })();

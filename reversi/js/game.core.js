@@ -1,10 +1,13 @@
 "use strict";
 
 // ライブラリ用のオブジェクトの作成
+//　windowオブジェクトにgameプロパティがないとき空のオブジェクト格納
 if (window.game === undefined) {window.game = {}}
+//　window.gameオブジェクトにcoreプロパティがないとき
 if (window.game.core === undefined) {window.game.core = {}}
 
-(function() {
+$(function() {
+	//上記のifで作成したオブジェクトを_tに格納
 	var _t = game.core;	// ショートカットの作成
 
 	// 変数の初期化
@@ -12,7 +15,7 @@ if (window.game.core === undefined) {window.game.core = {}}
 	_t.ua.pc = ! window.navigator.userAgent.match(
 		/iphone|ipod|ipad|android|windows Phone/i);
 
-	// ウィンドウ サイズ横幅/高さを取得
+	// ウィンドウ サイズ横幅/高さを取得する関数を
 	_t.getWinW = function() {return window.innerWidth};
 	_t.getWinH = function() {return window.innerHeight};
 
